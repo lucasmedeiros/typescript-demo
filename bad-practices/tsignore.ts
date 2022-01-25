@@ -1,10 +1,14 @@
-function add(a: number, b: number): number {
-  return a + b
+function writeNumberInString(num: number, digits: number): string {
+  return num.toFixed(digits)
 }
 
-add(10, 2) // funciona
+writeNumberInString(10, 3) // funciona
 
 /* @ts-ignore */
-add("asdsjds", "zskiffsd") // não vai acusar erro quando estiver codando, mas quando rodar vai quebrar
+writeNumberInString("asdsjds", "asdjasd") // não vai acusar erro quando estiver codando, mas quando rodar vai quebrar
 
-// add("asdsjds", "zskiffsd")
+/* @ts-ignore */
+writeNumberInString(4, 8, 1, 23, 12) // não vai acusar erro quando estiver codando, mas quando rodar vai quebrar
+
+// writeNumberInString("asdsjds", "zskiffsd")
+// writeNumberInString(4, 8, 1, 23, 12)

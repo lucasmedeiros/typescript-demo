@@ -9,7 +9,7 @@ interface Entity {
  * 'Pick' te permite *selecionar* atributos de um determinado tipo para utilizar em outro
  */
 
-interface Person extends Pick<Entity, "name" | "id"> {
+interface Person extends Pick<Entity, "id" | "name"> {
   age: number
   occupation: string
 }

@@ -23,5 +23,5 @@ const user2: ReadOnlyUser = {
   age: 23
 }
 
-// user2.name = "Naum podxi!" // vai ocasionar erro
+// user2.name = "Não pode!" // vai ocasionar erro
 // user2.age = -1 // vai ocasionar erro
