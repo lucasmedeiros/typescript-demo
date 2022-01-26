@@ -1,0 +1,1 @@
+Alguns exemplos para aprender mais a fundo os poderes de TypeScript!
