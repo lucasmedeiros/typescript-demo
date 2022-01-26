@@ -1,6 +1,7 @@
 interface MyFuncionParams {
   title: string
   onClick: () => void
+  onFinish?: () => void
 }
 
 function myFunction(params: MyFuncionParams) {
@@ -25,3 +26,24 @@ function mySecondFunction(params: MySecondFunctionParams) {
 }
 
 mySecondFunction({}) // funciona perfeitamente
+
+/**
+ * 'Required' é o oposto de Partial, e permite tornar todos os atribitos de um tipo obrigatórios
+ */
+
+type MyThirdFunctionParams = Required<MyFuncionParams>
+
+function myThirdFunction(params: MyThirdFunctionParams) {
+  return params
+}
+
+//  myThirdFunction({
+//    title: 'Um título',
+//    onClick: function() { /* Do something! :) */}
+//  }) // vai ocasionar erro
+
+myThirdFunction({
+  title: 'Um título',
+  onClick: function () { /* Do something! :) */ },
+  onFinish: function () { /* Do something! :) */ },
+})

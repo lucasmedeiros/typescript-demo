@@ -23,7 +23,7 @@ const person: Person = {
 }
 
 /**
- * 'Omit' te permite *excluir* atributos de um determinado tipo para utilizar em outro
+ * 'Omit' te permite *remover* atributos de um determinado tipo para utilizar em outro
  */
 
 type MyObject = Omit<Entity, "name">
