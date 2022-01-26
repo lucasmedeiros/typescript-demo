@@ -62,7 +62,7 @@ const stringKeyObject: StringKeyObject = {
   a: true,
   b: false,
   // c: 'error', // vai ocasionar erro, pois o tipo do valor é boolean
-  // 10: false, // vai ocasionar erro, pois o tipo da chave não é string
+  // 2: false,
 }
 type B = keyof StringKeyObject // string
 
