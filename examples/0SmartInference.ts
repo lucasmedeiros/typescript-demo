@@ -1,3 +1,8 @@
+/**
+ * A linguagem possui um grande poder de inferência, que podemos usar a nosso 
+ * favor.
+ */
+
 let a = "a"
 // a = 3 // vai ocasionar erro
 
